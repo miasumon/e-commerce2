@@ -1,0 +1,354 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+/*
+font-family: 'Handlee', cursive;
+
+font-family: 'Roboto', sans-serif
+  */
+
+}
+/*Navbar Starts*/
+header{
+  
+}
+.navbar{
+  background: radial-gradient(#fff,#ffd6d6);
+
+}
+.logo-img{
+  width: 100px;
+  height: 40px;
+
+}
+.navbar-brand{
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 30px;
+  
+}
+.nav-link{
+  margin-right: 15px;
+  padding: 10px 20px;
+  transition: transform 0.5s;
+}
+.nav-link:hover{
+  transform: scale(1.1);
+}
+
+
+.navbar-toggler{
+  margin-top: 30px;
+  
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+
+.navbar-toggler .fas{
+  font-size: 30px;
+}
+
+
+.right-menu{
+  display: inline-block;
+  margin-top: 30px;
+  
+}
+.right-menu li{
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+
+/*Navbar Ends*
+/*Banner Starts*/
+#banner{
+  position: relative;
+  padding: 5% 7%;
+  background-image: url('banner1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 30px 0;
+
+}
+.banner-img{
+
+  width: 100%;
+  height: 60vh;
+
+}
+
+.banner-content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+  
+}
+.banner-content h1{
+  background: #333;
+  opacity: 0.7;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  
+}
+
+
+
+/*Banner Ends*/
+/*Fashion Starts*/
+#fashion-trends{
+  padding: 5% 7%;
+
+  
+}
+.fashion-box{
+  margin: 30px 0;
+
+  
+}
+.section-title{
+  
+  max-width: 500px;
+  height:120px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,50,0.5);
+  margin: 30px auto;
+  position: relative;
+  background: #fff;
+}
+.section-title::after{
+  width: 200px;
+  height: 100px;
+  content: '';
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  background: green;
+  z-index: -1;
+}
+.section-title::before{
+  width: 200px;
+  height: 100px;
+  content: '';
+  bottom: -10px;
+  right: -10px;
+  position: absolute;
+  background: red;
+  z-index: -1;
+}
+
+
+.section-title h1{
+  padding: 40px;
+  
+}
+.fashion-img{
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+  
+}
+.fashion-img img{
+  margin-bottom: 15px;
+  width: 100%;
+}
+.btn-buy{
+  border: 0;
+  outline: 0;
+  width: 100px;
+  height: 40px;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  transition: transform 0.5s;
+  opacity: 0;
+  z-index: 1;
+  
+  
+}
+.fashion-img:hover .btn-buy{
+  bottom: 50%;
+  opacity: 1;
+  transform: translate(-50%,50%);
+  
+}
+.fashion-div{
+  background: #333;
+  opacity: 0;
+  
+  height: 0;
+  top: 0;
+  position: absolute;
+  transition:0.5s;
+
+}
+.fashion-img:hover .fashion-div{
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+/*Fashion Ends*/
+/*Subscribe Starts*/
+#subscribe{
+  padding: 5% 7%;
+  background: radial-gradient(#fff,#ffd6d6);
+  margin: 30px 0;
+}
+.sub-img img{
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0 20px 0px;
+  
+}
+.sub-contents{
+  padding: 40px;
+  background: #333;
+  opacity: 0.7;
+  color: #fff;
+  text-align: center;
+  
+  
+}
+
+
+
+/*Subscribe Ends*/
+/*Latest fashon Starts*/
+#latest-fashion{
+  padding: 5% 7%;
+  
+  
+}
+.latest-img{
+  margin: 30px 0;
+}
+
+
+.latest-img img{
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid green;
+  
+}
+.latest-img h4{
+  background: #333;
+  opacity: 0.5;
+  color: white;
+  padding: 10px 20px;
+}
+
+
+/*Latest fashon Ends*/
+/* fashon  brand Starts*/
+#fashion-brand{
+  padding: 5% 7%;
+
+  
+}
+.brand-img{
+  margin: 20px 0;
+}
+.brand-img img{
+  width: 100%;
+  border: 1px solid black;
+  
+}
+
+/* fashon  brand Ends*/
+/* Payment  Starts*/
+#payment{
+  padding: 5% 7%;
+  
+}
+.section-img{
+  margin: 20px 0;
+}
+.section-img img{
+  width: 100%;
+  margin: 10px 0;
+}
+.title{
+  position: relative;
+}
+.title h4::after{
+  content: '';
+  opacity: 0.5;
+  background: #333;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 120px;
+  height: 3px;
+  margin: 10px auto;
+}
+.app-img{
+  margin: 20px 0;
+}
+.app-img img{
+  width: 250px;
+  height: 75px;
+  margin: 10px 0;
+  
+  
+}
+
+/* Payment  Ends*/
+/* Footer  Starts*/
+footer{
+  
+  background: #333;
+  padding: 5% 7%;
+  
+}
+footer p{
+  color: #fff;
+  
+}
+.social-links{
+  text-align: center;
+  
+}
+.icon-style{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 30px;
+}
+
+
+/* Footer  Ends*/
+
+
+
+/*For large screen*/
+
+@media (min-width:768px){
+  .banner-content h1{
+
+  font-size: 100px;
+
+  
+}
+  
+  
+  
+}
